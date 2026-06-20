@@ -1,5 +1,13 @@
 # Enterprise AI Analyst Agent
 
+![Streamlit](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?logo=streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-LangGraph-green)
+
+### 🔗 [Try the live demo →](https://ai-bi-agent-enterprise-analyst.streamlit.app/)
+
+*Runs entirely on an embedded SQLite database — no login or setup required. Ask a business question and watch the multi-agent pipeline route it through document search, live data querying, or both.*
+
 A multi-agent business intelligence assistant that answers natural language questions by orchestrating document retrieval (RAG) and live database queries (SQL) through LangGraph - built for the insurance and financial services domain.
 
 ## The Problem
@@ -12,35 +20,35 @@ This system answers that same question in under a minute, with the policy refere
 
 User Question
 
-|
+     |
 
-v
+     v
 
 Router Agent (LLM-based intent classification)
 
-|
+     |
 
-+--+--+
+  +--+--+
 
-|  |  |
+  |  |  |
 
-v  v  v
+  v  v  v
 
 RAG SQL Both
 
-|  |  |
+  |  |  |
 
-+--+--+
+  +--+--+
 
-|
+     |
 
-v
+     v
 
 Synthesis Agent
 
-|
+     |
 
-v
+     v
 
 Final Answer
 
@@ -80,7 +88,7 @@ Snowflake requires authentication, which isn't practical for anyone trying this 
 ## Running Locally
 
 ```bash
-git clone [your-repo-url]
+git clone [git clone https://github.com/Nishant-Chaudhari-07/ai-bi-agent.git]
 cd ai-bi-agent
 python -m venv venv
 venv\Scripts\activate
