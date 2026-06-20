@@ -1,0 +1,33 @@
+INTERNAL CLAIMS ESCALATION POLICY
+Commercial Auto Insurance Division
+Effective Policy Reference: Section 4.2 - Claims Authority Limits
+
+1. CLAIMS HANDLER AUTHORITY LIMITS
+
+Claims handlers are authorized to approve and settle commercial auto claims up to 
+$50,000 without additional review. This authority applies to claims arising under 
+the Business Auto Coverage Form (CA 00 01) for all covered auto designations.
+
+2. SUPERVISOR APPROVAL THRESHOLD
+
+Any commercial auto claim with a total claim amount exceeding $50,000 requires 
+mandatory supervisor review and approval prior to settlement. This threshold 
+applies regardless of incident type, including single vehicle collision, 
+multi-vehicle collision, and vehicle theft claims.
+
+3. SENIOR MANAGEMENT ESCALATION
+
+Claims exceeding $75,000 require senior claims manager approval in addition to 
+supervisor sign-off. Claims exceeding $100,000 require regional claims director 
+notification within 24 hours of identification.
+
+4. RATIONALE
+
+This tiered approval structure ensures appropriate oversight scales with financial 
+exposure, consistent with NAIC Unfair Claims Settlement Practices Act standards 
+for reasonable claims investigation and fair settlement practices.
+
+5. REVIEW CYCLE
+
+This policy is reviewed annually and aligned with enterprise risk management 
+guidelines. Last reviewed: Q1 2026.
