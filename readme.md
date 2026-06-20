@@ -1,6 +1,6 @@
 # Enterprise AI Analyst Agent
 
-![Streamlit](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?logo=streamlit&logoColor=white)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?logo=streamlit&logoColor=white)](https://ai-bi-agent-enterprise-analyst.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-LangGraph-green)
 
@@ -18,47 +18,25 @@ This system answers that same question in under a minute, with the policy refere
 
 ## Architecture
 
-User Question
+```mermaid
+flowchart TD
+    Q[User Question] --> R[Router Agent<br/>LLM-based intent classification]
+    R -->|policy lookup| RAG[RAG Agent]
+    R -->|data query| SQL[SQL Agent]
+    R -->|needs both| BOTH[RAG + SQL]
+    RAG --> S[Synthesis Agent]
+    SQL --> S
+    BOTH --> S
+    S --> A[Final Answer]
+```
 
-     |
+**Router Agent** — classifies each question as needing document search, database query, or both
 
-     v
+**RAG Agent** — retrieves relevant context from a FAISS vector store built from real insurance policy documents (NAIC regulatory guidelines, ISO commercial auto policy forms, Chubb's SEC 10-K filing, and an internal claims escalation policy)
 
-Router Agent (LLM-based intent classification)
+**SQL Agent** — writes and executes SQL against a live Snowflake warehouse, with a SQLite fallback for zero-setup demos. Self-corrects on schema errors without human intervention.
 
-     |
-
-  +--+--+
-
-  |  |  |
-
-  v  v  v
-
-RAG SQL Both
-
-  |  |  |
-
-  +--+--+
-
-     |
-
-     v
-
-Synthesis Agent
-
-     |
-
-     v
-
-Final Answer
-
-**Router Agent** - classifies each question as needing document search, database query, or both
-
-**RAG Agent** - retrieves relevant context from a FAISS vector store built from real insurance policy documents (NAIC regulatory guidelines, ISO commercial auto policy forms, Chubb's SEC 10-K filing, and an internal claims escalation policy)
-
-**SQL Agent** - writes and executes SQL against a live Snowflake warehouse, with a SQLite fallback for zero-setup demos. Self-corrects on schema errors without human intervention.
-
-**Synthesis Agent** - combines outputs from RAG and SQL into a single executive briefing, passing extracted facts (like dollar thresholds) from documents directly into the SQL agent's context to prevent re-deriving numbers that already came from policy text
+**Synthesis Agent** — combines outputs from RAG and SQL into a single executive briefing, passing extracted facts (like dollar thresholds) from documents directly into the SQL agent's context to prevent re-deriving numbers that already came from policy text
 
 ## Why Dual-Mode Database
 
