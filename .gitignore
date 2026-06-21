@@ -4,4 +4,3 @@ __pycache__/
 *.pyc
 snowflake_private_key.pem
 snowflake_public_key.pem
-vectorstore/
