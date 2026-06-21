@@ -1,8 +1,8 @@
 # Enterprise AI Analyst Agent
 
-[![Streamlit](https://ai-bi-agent-enterprise-analyst.streamlit.app/)
-![LangChain]
-![Snowflake]
+[[Streamlit](https://ai-bi-agent-enterprise-analyst.streamlit.app/)]
+[LangChain]
+[Snowflake]
 
 ### 🔗 [Try the live demo →](https://ai-bi-agent-enterprise-analyst.streamlit.app/)
 
