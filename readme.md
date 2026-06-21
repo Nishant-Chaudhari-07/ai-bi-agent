@@ -1,7 +1,6 @@
 # Enterprise AI Analyst Agent
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?logo=streamlit&logoColor=white)](https://ai-bi-agent-enterprise-analyst.streamlit.app/)
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-LangGraph-green)
 
 ### 🔗 [Try the live demo →](https://ai-bi-agent-enterprise-analyst.streamlit.app/)
