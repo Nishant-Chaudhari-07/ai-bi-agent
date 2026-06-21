@@ -1,7 +1,6 @@
 # Enterprise AI Analyst Agent
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live_Demo-FF4B4B?logo=streamlit&logoColor=white)](https://ai-bi-agent-enterprise-analyst.streamlit.app/)
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-LangGraph-green)
 ![Snowflake](https://img.shields.io/badge/Snowflake-Live-29B5E8?logo=snowflake&logoColor=white)
 
@@ -100,6 +99,10 @@ streamlit run app.py
 ```
 
 The app runs in SQLite demo mode automatically.
+
+**Production mode (with live Snowflake):**
+
+Add to a `.env` file in the project root:
 
 GROQ_API_KEY=your_groq_key
 
